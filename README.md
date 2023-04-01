@@ -5,6 +5,11 @@ Welcome to "ChatGPT Article / Content Generator" repository. Delighted to see yo
 This is a **Laravel** script/app that helps you to create by the tone language unique article/content for your blog, news, recives ...etc websites or you can use this app in your personal research purposes. 
 
 
+
+https://user-images.githubusercontent.com/82325607/229308365-105ff5de-d6c1-4556-b1f1-ffca88f93801.mp4
+
+
+
 ## Get Started
 
 #### Installation 
