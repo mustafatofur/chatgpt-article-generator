@@ -2,7 +2,7 @@
 #   🧠  ChatGPT Article / Content Generator
 
 Welcome to "ChatGPT Article / Content Generator" repository. Delighted to see you here! 
-This is a **Laravel** script/app that helps you to create by the tone language unique article/content for your blog, news, recives ...etc websites or you can use this app in your personal research purposes. 
+This is a **Laravel** script/app that helps you to create by the tone language unique article/content for your blog, news, recipes ...etc websites or you can use this app in your personal research purposes. 
 
 
 
@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/82325607/229308365-105ff5de-d6c1-4556-
 
 ## Get Started
 
-#### Installation 
+### Installation 
 
 First, Setting up your development environment on your local machine:
 
@@ -28,7 +28,7 @@ Rename .env.example to .env and set your OpenAI API key in the .env file:
 OPENAI_API_KEY= sk-...
 ```
 
-#### Run The Project
+### Run The Project
 
 If you would like to make changes on the project run:
 
@@ -59,9 +59,9 @@ Now kindly access the application via [http://localhost:8000](http://localhost:8
 
 
 
-#### Thanks to:
+### Thanks to:
 
-##### Beside Laravel, this project uses other tools like:
+#### Beside Laravel, this project uses other tools like:
 
 - [Vite](https://github.com/vitejs/vite)
 - [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
