@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import "./slimselect.css";
+@tailwind base;
+
+.ss-main {
+    @apply !bg-slate-500 !text-white !p-2.5
+}
+.ss-option {
+    @apply !bg-slate-500 !text-white !p-2.5
+}
+.ss-option:hover {
+    @apply !bg-slate-400 !transition-all
+}
+.ss-selected {
+    @apply !bg-slate-400
+}
+.ss-arrow {
+    filter: invert(64%) sepia(17%) saturate(57%) hue-rotate(86deg) brightness(118%) contrast(139%);
+}
+
+#input-slider::-webkit-slider-thumb {
+    @apply appearance-none w-[27.5px] h-[27.5px] z-20 bg-slate-300 rounded-full cursor-pointer
+}
+
+
+ 
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
