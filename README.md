@@ -57,7 +57,42 @@ php artisan serve
 
 Now kindly access the application via [http://localhost:8000](http://localhost:8000)
 
+### Deploy The Project
 
+#### Building for production
+If you would like to deploy the project after your changes, run:
+
+```bash
+npm run build
+```
+
+Vite will generate for you asset files under /public/build folder for production:
+
+```bash
+vite v4.2.1 building for production...
+✓ 60 modules transformed.
+public/build/manifest.json              0.26 kB
+public/build/assets/app-e55e7947.css   25.51 kB │ gzip:  5.34 kB
+public/build/assets/app-10a3e433.js   126.33 kB │ gzip: 43.91 kB
+```
+
+Include new asset files to resources/views/layouts/app.blade.php file;
+
+Don't forget to comment out the Vite() directives that is not being used in the production;
+
+```html
+<head>
+{{-- @vite('resources/css/app.css') --}}
+<link rel="stylesheet" href="{{ asset('build/assets/app-e55e7947.css') }}">
+</head>
+<body>
+...
+{{-- @vite('resources/js/app.js') --}}
+<script type="module" src="{{ asset('build/assets/app-10a3e433.js') }}"></script>
+</body>
+```
+
+And you're ready to deploy your project!
 
 ### Thanks to:
 
