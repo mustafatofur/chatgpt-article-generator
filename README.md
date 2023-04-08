@@ -96,7 +96,7 @@ And you're ready to deploy your project!
 
 ## #Changelog
 Apr 07, 2023
-- Added Image generation feature by OpenAI
+- Added Image generation feature through OpenAI
 - Project revised to based on components after added image generation feature
 - Added V-Wave 
 
