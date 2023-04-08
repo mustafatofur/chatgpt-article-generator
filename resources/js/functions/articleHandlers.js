@@ -12,7 +12,7 @@ export const process = (self) => {
     self.loading = true;
 
     try {
-      fetch("/api/process", {
+      fetch("/api/text/process", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,7 +26,12 @@ export const process = (self) => {
           words: self.words,
         }),
       })
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
         .then((data) => {
           if (data.success) {
             self.article = data.message.replaceAll("\n", '<br />');
@@ -44,7 +49,7 @@ export const download = (self, fileType) => {
 
     self.downloading = true;
     try {
-      fetch("/api/download", {
+      fetch("/api/text/download", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +61,12 @@ export const download = (self, fileType) => {
           fileType: 'txt'
         }),
       })
-        .then((response) => response.blob())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.blob();
+      })
         .then((blob) => {
              const file = window.URL.createObjectURL(blob);
              const a = self.$refs.download;

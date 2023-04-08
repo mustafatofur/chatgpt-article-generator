@@ -2,6 +2,12 @@
 @import "./slimselect.css";
 @tailwind base;
 
+.tab-menu {
+    @apply flex-1 text-center py-3 rounded-md rounded-b-none px-4 border-b-2  text-sm font-medium text-gray-300   hover:text-indigo-400/90 focus:outline-none
+}
+.active {
+   @apply border-indigo-500 text-indigo-400/90 focus:border-indigo-400/90 transition delay-100
+}
 .ss-main {
     @apply !bg-slate-500 !text-white !p-2.5
 }
@@ -30,4 +36,3 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
- 

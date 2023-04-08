@@ -1,9 +1,11 @@
 import './bootstrap';
 import { createApp } from 'vue';
 import App  from './App.vue';
-
-const app = document.getElementById('app')
-        if(app) 
+import VWave from 'v-wave';
+const appDiv = document.getElementById('app')
+        if(appDiv) 
         {
-            createApp(App).mount('#app')
+            const app = createApp(App);
+            app.use(VWave)
+            app.mount('#app')
         }

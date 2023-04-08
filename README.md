@@ -94,6 +94,12 @@ Don't forget to comment out the Vite() directives that is not being used in the 
 
 And you're ready to deploy your project!
 
+## #Changelog
+Apr 07, 2023
+- Added Image generation feature by OpenAI
+- Project revised to based on components after added image generation feature
+- Added V-Wave 
+
 ### Thanks to:
 
 #### Beside Laravel, this project uses other tools like:
@@ -103,3 +109,4 @@ And you're ready to deploy your project!
 - [VueJS](https://github.com/vuejs)
 - [OpenAI Laravel](https://github.com/openai-php/laravel)
 - [SlimSelect](https://github.com/brianvoe/slim-select)
+- [V-Wave](https://github.com/justintaddei/v-wave)
